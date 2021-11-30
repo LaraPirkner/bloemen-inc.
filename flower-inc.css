@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body {
+    background-color: #74b27e;
+}
+.login {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+}
+.login h2 {
+    text-align: center;
+    color: #5b6574;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ebb3a9;
+    color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.login form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #ebb3a9;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+  background-color: #F3D3CE;
+    transition: background-color 0.2s;
+}
+
+
+/* navbar */
+.navtop {
+	background-color: #74B27E;
+	height: 60px;
+	width: 100%;
+	border: 0;
+}
+.navtop div {
+	display: flex;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+.navtop div h1, .navtop div a {
+	display: inline-flex;
+	align-items: center;
+}
+.navtop div h1 {
+	flex: 1;
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+	color: #eaebed;
+	font-weight: normal;
+}
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #eaebed;
+	font-weight: bold;
+}
+.navtop div a i {
+	padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+	color: #F3D3CE;
+}
+
+/* dashboard (en overlappend met andere paginas op sommige vlakken) */
+
+body.loggedin {
+	background-color: #f3f4f7;
+}
+.content {
+	width: 90%;
+	margin: 0 auto;
+}
+.content h1 {
+	margin: 0;
+	padding: 25px 0;
+	font-size: 26px;
+	border-bottom: 1px solid #e0e0e3;
+	color: #4a536e;
+}
+.content > p, .content > div {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #fff;
+    
+}
+.content > p table td, .content > div table td {
+	padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+	font-weight: bold;
+	color: #4a536e;
+	padding-right: 15px;
+}
+.content > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+
+.notificatie{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+    width: 90%;
+    margin: 1.3em auto;
+    background-color: #ebb3a9;
+}
+
+.notificatie h1{
+    font-size: 20px;
+    color: #74B27E;
+}
+
+.notificatie h2{
+    margin-top: 0.5em;
+	font-size: 18px;
+	color: #fff;
+}
+
+/* base Meerdere pagina's*/
+
+.base{
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #fff;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* magazijn */
+
+#magazijn {
+    color: red;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 3em;
+	background-color: #fff;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#m-overzicht{
+    margin: 1.5em;
+    border: solid 1px #ebb3a9;
+    width: 15em;
+    padding: 0.5em;
+}
+
+
+/* Bloemen hoofdpagina */
+#b-overzicht{
+    margin: 1.5em;
+    border: solid 1px #ebb3a9;
+    width: 15em;
+    padding: 0.5em;
+}
+
+/* Bloemen per stuk pagina */
+
+#b-bloem{
+    margin: 1.5em;
+    border: solid 1px #ebb3a9;
+    width: 90%;
+    padding: 0.5em;
+}
+
+#b-foto{
+    width: 4em;
+    height: 4em;
+}
+
+
+/* new flower */
+#f-bloem{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    justify-content: center;
+}
+
+#f-bloem label{
+    margin-top: 0.8em;
+    font-size: 20px;
+}
+
+#b-submit{
+    margin-top: 0.8em;
+    width: 10em;
+}
+
+
